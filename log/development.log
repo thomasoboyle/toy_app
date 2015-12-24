@@ -479,3 +479,5 @@ Processing by MicropostsController#create as HTML
   Rendered microposts/_form.html.erb (1.5ms)
   Rendered microposts/new.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMicropost Load (0.2ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 1]]
